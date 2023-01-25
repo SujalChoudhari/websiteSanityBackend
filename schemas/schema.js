@@ -11,7 +11,7 @@ import post from './post'
 import project from './project'
 
 import notes from './notes/notes'
-import languageNotes from './notes/languageNotes'
+import language from './notes/language'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +30,6 @@ export default createSchema({
     blockContent,
     project,
     notes,
-    languageNotes
+    language
   ]),
 })

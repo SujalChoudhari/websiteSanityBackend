@@ -12,7 +12,7 @@
     "build": "sanity build public -y"
   },
   "keywords": [
-    "sanity"
+    "sanity", "website","backend","portfolio"
   ],
   "dependencies": {
     "@sanity/base": "^2.35.0",

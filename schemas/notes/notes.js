@@ -21,9 +21,15 @@ export default {
 
         },
         {
-            name: 'file',
-            title: 'File',
-            type: 'file',
+            name: 'link',
+            title: 'Link',
+            type: 'url',
+        },
+        {
+            name: 'languages',
+            title: 'Languages',
+            type: 'array',
+            of: [{ type: 'reference', to: { type: 'language' } }],
         },
 
     ],
