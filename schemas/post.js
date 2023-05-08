@@ -1,6 +1,6 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'blog',
+  title: 'Blogpost',
   type: 'document',
   fields: [
     {
@@ -8,6 +8,8 @@ export default {
       title: 'Title',
       type: 'string',
     },
+
+
     {
       name: 'slug',
       title: 'Slug',
@@ -16,30 +18,18 @@ export default {
         source: 'title',
         maxLength: 96,
       },
+
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'link',
+      title: 'Link',
+      type: 'url',
     },
     {
-      name: 'categories',
+      name: 'category',
       title: 'Categories',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
+      of: [{ type: 'reference', to: { type: 'category' } }],
     },
   ],
 }

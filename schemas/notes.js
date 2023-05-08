@@ -29,7 +29,7 @@ export default {
             name: 'languages',
             title: 'Languages',
             type: 'array',
-            of: [{ type: 'reference', to: { type: 'language' } }],
+            of: [{ type: 'reference', to: { type: 'category' } }],
         },
 
     ],
